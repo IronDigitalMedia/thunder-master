@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin"
+                >
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/widget_relative_layout"
+                    android:padding="4dp">
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:contentDescription="@string/refresh_description_widget"
+                           android:id="@+id/refreshImageView_widget"
+                           android:src="@drawable/refresh"
+                            />
+                <ProgressBar android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/progressBar_widget"
+                                />
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/temperatureLabel_widget"
+                          android:text="99°"
+                          android:textSize="35sp"
+                          android:layout_alignTop="@+id/progressBar_widget"
+                          android:layout_toRightOf="@+id/progressBar_widget"
+                          android:layout_toEndOf="@+id/progressBar_widget"
+                          android:layout_marginLeft="28dp"
+                          android:layout_marginStart="28dp"/>
+
+    </RelativeLayout>
+</FrameLayout>
